@@ -1,0 +1,56 @@
+<p-panel header="Not so Basic Pipes" class="p-1">
+  <p>
+    Pipes included in Angular - Usually in the Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+      <p>
+        Hello {{gender | i18nSelect: invitationMap}}{{name}}, it's a pleasure to have you back here.
+      </p>
+
+      <p-button (click)="changeClient()" label="Change client">
+
+      </p-button>
+
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+
+      <p>
+        We currently have {{clients.length}} clients waiting
+      </p>
+      <p-button label="Delete client"></p-button>
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="Slice Pipe" [toggleable]="true">
+
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="Json Pipe" [toggleable]="true">
+
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="Async Pipe" [toggleable]="true">
+
+    </p-fieldset>
+  </div>
+
+</div>
